@@ -111,6 +111,45 @@ footer {
     margin-top: auto;
 }
 
+.remove-btn,
+.toggle-read-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+.toggle-read-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.toggle-read-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.remove-btn:active,
+.toggle-read-btn:active {
+    transform: translateY(0);
+}
+
+
 @media (max-width: 768px) {
     main {
         padding: 20px;
@@ -118,5 +157,10 @@ footer {
 
     #library-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .remove-btn,
+    .toggle-read-btn {
+        padding: 8px;
+        font-size: 12px;
     }
 }
